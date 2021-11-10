@@ -1,0 +1,200 @@
+/*General styles*/
+h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+h2{
+    font-size: 100px;
+}
+
+body{
+    scroll-snap-type: y proximity;
+}
+  
+/*Classes*/
+.flex-center { 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+} 
+
+.picture{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-link {
+    float: left;
+    border-right: 1px solid grey;
+}
+  
+.page-link a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+ 
+.page-link a:hover {
+    background-color: #111;
+}
+
+.description{
+    font-size: 15px;
+}
+
+.border{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg{
+    background-color: #f0ead6;
+    
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-style: solid;
+    border-color: grey;
+}
+
+.project-title{
+    margin-left: 10px;
+
+}
+
+.project-link{
+    text-decoration: none;
+    color: #3e7dfa;
+}
+
+/*IDs*/
+
+/*Header*/
+#navbar{
+    position: fixed;
+    top: 0px;
+    width:100vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+  
+#welcome-section{
+    height: 100vh;
+
+    display: flex;
+
+    background-image: url("images/japan.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+#profile{    
+    width: 30%;
+    height: 80vh;
+
+    background-color: beige;
+    border: 5px;
+    border-style: solid;
+    border-color: gray;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#headshot{
+    width: 100%;
+    height:auto;
+}
+  
+#welcome-section .description{
+    font-size: 11px;
+    margin-top: 5px;
+    text-align: end;
+}
+
+/*Body*/
+#about-me{
+    display: flex;
+    height: 100vh;    
+
+    background-image: url("images/Crying.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+
+#about-me .bg{
+    background-color: #f0ead6;
+
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-style: solid;
+    border-color: grey;
+}
+
+#about-me .title{
+    margin-top: 10px;;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#about-me .description{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    font-size: 50px; 
+
+    background-image: url("images/clouds.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#projects .bg{
+    margin-top: 20vh;
+    width: 50vw;
+}
+
+#projects .title{
+    margin-bottom: 5px;
+}
+
+#project-title{
+    padding-left: 20px;
+}
+#profile-link{
+    padding-right: 50px;
+    color: black;
+}
+
+
+/*Media Queries*/
+@media (max-width: 800px){
+    font-size: 40px;
+}
